@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 11</title>
+  </head>
+  <body>
+    <form id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+        autofocus
+        required
+        minlength="1"
+        id="search-box"
+      />
+      <button type="submit" id="search-button">
+        <img src="./search.svg" width="50" />
+      </button>
+      <input type="checkbox" id="infinite" />
+      <label for="infinite" class="infinite__label"
+        ><img src="./infinity.svg" width="40"
+      /></label>
+    </form>
+
+    <div class="gallery"></div>
+    <button type="button" class="load-more">Load more</button>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
